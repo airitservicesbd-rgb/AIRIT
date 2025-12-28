@@ -39,10 +39,8 @@ p {
 }
 
 .logo {
-  width: 90px;
-  background: #fff;
-  padding: 10px;
-  border-radius: 16px;
+  width: 120px;       /* slightly larger */
+  height: auto;
   margin-bottom: 15px;
 }
 
