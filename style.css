@@ -161,3 +161,34 @@ p {
 .whatsapp-float:hover {
   transform: scale(1.1);
 }
+.footer {
+  background: #0a2540;
+  color: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.footer h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.footer-contact {
+  margin: 20px 0;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer .copyright {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #94a3b8;
+}
