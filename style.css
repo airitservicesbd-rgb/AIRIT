@@ -54,4 +54,26 @@ footer {
 .logo {
   width: 70px;
   height: auto;
+  .logo {
+  background: #ffffff;
+  padding: 8px;
+  border-radius: 12px;
+}
+}
+.hero {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  color: #ffffff;
+  font-size: 36px;
+  margin: 0;
+}
+
+.hero p {
+  color: #dcdcdc;
+  margin-top: 5px;
+  font-size: 16px;
 }
