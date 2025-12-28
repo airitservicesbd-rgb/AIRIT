@@ -60,3 +60,34 @@ p { color: #555; margin-top: 10px; }
 
 /* ===== Animation ===== */
 @keyframes fadeIn { 0% { opacity: 0; transform: translateY(-10px); } 100% { opacity: 1; transform: translateY(0); } }
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.product-card {
+  background: #f5f7fb;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.product-card img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #0f4c75;
+  font-weight: 500;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
