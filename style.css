@@ -39,9 +39,17 @@ p {
 }
 
 .logo {
-  width: 120px;       /* slightly larger */
+  width: 130px;
   height: auto;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
+}
+
+/* Mobile adjustment */
+@media (max-width: 600px) {
+  .logo {
+    width: 100px;
+    margin-bottom: 14px;
+  }
 }
 
 .hero h1 {
