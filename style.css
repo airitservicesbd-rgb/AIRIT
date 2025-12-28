@@ -140,3 +140,24 @@ p {
   transform: translateY(-8px);
   box-shadow: 0 18px 40px rgba(0,0,0,0.12);
 }
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 26px;
+  line-height: 55px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  z-index: 1000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
