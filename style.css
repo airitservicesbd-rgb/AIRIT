@@ -91,3 +91,38 @@ p { color: #555; margin-top: 10px; }
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.product-card {
+  background: #f5f7fb;
+  border-radius: 14px;
+  padding: 18px 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.product-icon {
+  font-size: 32px;
+  color: #0f4c75;
+  margin-bottom: 8px;
+}
+
+.product-card p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.product-card:hover .product-icon {
+  color: #3282b8;
+}
