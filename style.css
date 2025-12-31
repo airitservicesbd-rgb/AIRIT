@@ -168,3 +168,8 @@ p { color: #555; margin-top: 10px; }
     opacity: 1;
   }
 }
+#modalImage {
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+}
