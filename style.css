@@ -173,3 +173,8 @@ p { color: #555; margin-top: 10px; }
   height: auto;
   margin-bottom: 15px;
 }
+.product-card img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 8px;
+}
