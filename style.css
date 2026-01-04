@@ -217,14 +217,6 @@ p { color: #555; margin-top: 10px; }
 .top-bar {
   .top-link {
   color: #e5e7eb;
-  text-decoration: none;
-  font-size: 13px;
-}
-
-.top-link:hover {
-  color: #38bdf8;
-  text-decoration: underline;
-}
   background: #0f172a;
   color: #e5e7eb;
   display: flex;
