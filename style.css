@@ -1,3 +1,10 @@
+:root {
+  --primary-bg: linear-gradient(135deg, #0f172a, #0b3c5d);
+  --primary-dark: #0f172a;
+  --accent: #22c55e;
+  --text-light: #ffffff;
+  --text-muted: #cbd5e1;
+}
 /* ===== Fonts & Reset ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
