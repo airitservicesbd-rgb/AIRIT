@@ -16,22 +16,19 @@ body {
   background: linear-gradient(135deg, #0f172a, #0b3c5d);
   color: #fff;
   text-align: center;
-  padding: 90px 20px;
+  padding: 70px 20px;
 }
 
-/* ===== HEADER LOGO ===== */
 .logo {
-  width: 180px;       /* increase from 140px to 180px */
-  max-width: 200px;   /* ensures it doesn't overflow on mobile */
-  height: auto;       /* keeps original aspect ratio */
-  margin-bottom: 15px; /* space below logo */
+  width: 180px;
+  max-width: 200px;
+  height: auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto; /* center perfectly */
+  margin: 0 auto 15px;
 }
 
 .header p {
-  margin: 15px 0 30px;
+  margin: 15px 0 25px;
   color: #cbd5e1;
 }
 
@@ -139,17 +136,6 @@ h2 {
 .card p {
   font-weight: 600;
   font-size: 14px;
-}
-
-.card .price {
-  display: inline-block;
-  margin-top: 6px;
-  padding: 3px 8px;
-  font-size: 12px;
-  font-weight: bold;
-  color: #fff;
-  background: #22c55e;
-  border-radius: 6px;
 }
 
 /* ================= ABOUT ================= */
