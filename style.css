@@ -1,3 +1,4 @@
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +11,7 @@ body {
   color: #0f172a;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 .header {
   background: linear-gradient(135deg, #0f172a, #0b3c5d);
   color: #fff;
@@ -35,12 +36,17 @@ body {
 }
 
 .btn {
-  background: #22c55e;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
   color: #fff;
   padding: 12px 26px;
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
 }
 
 .btn.outline {
@@ -48,7 +54,12 @@ body {
   border: 2px solid #fff;
 }
 
-/* NAV */
+.btn.outline:hover {
+  background: #22c55e;
+  color: #fff;
+}
+
+/* ================= NAVIGATION ================= */
 .nav {
   background: #fff;
   padding: 12px;
@@ -61,33 +72,46 @@ body {
   text-decoration: none;
   color: #0f172a;
   font-weight: bold;
+  transition: 0.3s;
 }
 
-/* SECTIONS */
+.nav a:hover {
+  color: #22c55e;
+}
+
+/* ================= SECTIONS ================= */
 section {
-  padding: 60px 20px;
+  padding: 80px 20px;
   max-width: 1000px;
   margin: auto;
 }
 
 h2 {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  font-size: 2.2rem;
 }
 
-/* SERVICES */
+/* ================= CARD GRID ================= */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 25px;
 }
 
+/* ================= CARDS ================= */
 .card {
-  background: #fff;
-  padding: 30px;
-  text-align: center;
+  background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .card i {
@@ -96,29 +120,66 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* CONTACT */
+/* ================= PRODUCT IMAGES ================= */
+.card img {
+  width: 100%;
+  max-width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.card p {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.card .price {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 3px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  background: #22c55e;
+  border-radius: 6px;
+}
+
+/* ================= ABOUT ================= */
+#about p {
+  text-align: center;
+  max-width: 750px;
+  margin: auto;
+  font-size: 1.05rem;
+  color: #475569;
+}
+
+/* ================= CONTACT ================= */
 #contact {
   text-align: center;
 }
 
-.social a {
+#contact .social a {
   font-size: 22px;
   margin: 0 10px;
   color: #0f172a;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 .footer {
   background: linear-gradient(135deg, #0f172a, #0b3c5d);
   color: #ffffff;
   text-align: center;
-  padding: 30px 20px;
-}
-.footer p {
-  color: #cbd5e1;
+  padding: 40px 20px;
+  font-size: 14px;
 }
 
-/* WHATSAPP FLOAT */
+.footer p {
+  margin: 0;
+}
+
+/* ================= WHATSAPP FLOAT ================= */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -133,61 +194,18 @@ h2 {
   justify-content: center;
   font-size: 28px;
 }
-/* ===== IT PRODUCTS FIX ===== */
 
-#products .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-}
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
 
-#products .card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
+  .header h1 {
+    font-size: 2rem;
+  }
 
-#products .card img {
-  width: 100%;
-  max-width: 120px;
-  height: 120px;
-  object-fit: contain;
-  margin: 0 auto 10px;
-  display: block;
-}
-
-#products .card p {
-  font-weight: 600;
-  font-size: 14px;
-}
-/* ===== PRODUCT CARD HOVER EFFECT ===== */
-#products .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#products .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-/* ===== SECTION SPACING ===== */
-section {
-  padding: 80px 20px; /* slightly larger spacing */
-}
-
-h2 {
-  font-size: 2.2rem;
-  margin-bottom: 50px;
-}
-
-/* ===== BUTTONS POLISH ===== */
-.btn {
-  font-size: 14px;
-  letter-spacing: 0.5px;
-}
-
-.btn.outline:hover {
-  background: #22c55e;
-  color: #fff;
+  .header p {
+    font-size: 1rem;
+  }
 }
