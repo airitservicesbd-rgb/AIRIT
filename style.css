@@ -13,7 +13,7 @@ body {
 
 /* ================= TOP CONTACT BAR ================= */
 .top-bar {
-  background: #22c55e;
+  background: linear-gradient(135deg, #0f172a, #0b3c5d); /* match header/footer */
   color: #fff;
   padding: 6px 0;
   font-size: 14px;
@@ -41,7 +41,7 @@ body {
 }
 
 .top-bar .social-icons a:hover {
-  color: #0f172a;
+  color: #22c55e; /* subtle highlight on hover */
 }
 
 /* ================= HEADER ================= */
