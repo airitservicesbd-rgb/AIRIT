@@ -11,9 +11,45 @@ body {
   color: #0f172a;
 }
 
+/* ================= TOP CONTACT BAR ================= */
+.top-bar {
+  background: #22c55e;
+  color: #fff;
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+.top-bar-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.top-bar .contact-info span {
+  margin-right: 15px;
+}
+
+.top-bar .social-icons a {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.top-bar .social-icons a:hover {
+  color: #0f172a;
+}
+
 /* ================= HEADER ================= */
 .header {
-  padding: 50px 20px 70px 20px; /* top, right, bottom, left */
+  background: linear-gradient(135deg, #0f172a, #0b3c5d);
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px 70px 20px;
 }
 
 .logo {
@@ -149,12 +185,6 @@ h2 {
   text-align: center;
 }
 
-#contact .social a {
-  font-size: 22px;
-  margin: 0 10px;
-  color: #0f172a;
-}
-
 /* ================= FOOTER ================= */
 .footer {
   background: linear-gradient(135deg, #0f172a, #0b3c5d);
@@ -197,36 +227,10 @@ h2 {
   .header p {
     font-size: 1rem;
   }
-}
-/* ================= TOP CONTACT BAR ================= */
-.top-bar {
-  background: #22c55e; /* green, or any color you want */
-  color: #fff;
-  padding: 6px 0;
-  font-size: 14px;
-}
 
-.top-bar-container {
-  max-width: 1000px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  flex-wrap: wrap;
-}
-
-.top-bar .contact-info span {
-  margin-right: 15px;
-}
-
-.top-bar .social-icons a {
-  color: #fff;
-  margin-left: 10px;
-  font-size: 16px;
-  transition: 0.3s;
-}
-
-.top-bar .social-icons a:hover {
-  color: #0f172a;
+  .top-bar-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
 }
