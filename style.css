@@ -246,7 +246,31 @@ h2 {
   flex-direction: column;
   gap: 15px;
 }
+.product-link {
+  text-decoration: none;
+  color: inherit;
+}
 
+/* Keyboard page layout */
+.product-details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.product-item img {
+  width: 70px;
+}
 .product-item {
   display: flex;
   gap: 15px;
